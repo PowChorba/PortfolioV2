@@ -162,7 +162,7 @@
         place-items: center;
         grid-template-columns: 1fr;
         width: 90%;
-        height: 60vh;
+        height: 70vh;
         margin: 0px auto;
     }
 
@@ -195,9 +195,9 @@
         align-items: center;
         justify-content: center;
         padding: 20px;
-        height: 60px;
+        height: 50px;
         margin-bottom: 10px;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     
     .divActive{
@@ -207,9 +207,9 @@
         align-items: center;
         justify-content: center;
         padding: 10px;
-        height: 60px;
+        height: 50px;
         margin-bottom: 10px;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     
     .main p {
@@ -227,6 +227,7 @@
 
     .divButtons button{
         padding: 10px;
+        font-size: 0.8rem;
     }
 
 }

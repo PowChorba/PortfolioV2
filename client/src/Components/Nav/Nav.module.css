@@ -67,6 +67,10 @@
         left: 0px;
     }
 
+    .divLinks div{
+        border-bottom: 1px solid #fff;
+    }
+
     .divLinks a {
         color: #fff;
     }

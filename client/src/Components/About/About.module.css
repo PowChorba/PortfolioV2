@@ -84,6 +84,16 @@
     .divTexto div {
         width: 90%;
     }
+
+    .divTexto div h3 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .divTexto div p {
+        font-size: 0.6rem;
+    }
+
     .img{
         margin-top: 25px;
         width: 100%;

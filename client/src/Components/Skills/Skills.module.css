@@ -71,8 +71,8 @@
 
 @media only screen and (max-width: 414px){
     .divSkills div {
-        width: 100px;
-        height: 100px;
+        width: 75px;
+        height: 75px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -98,11 +98,11 @@
     }
 
     .divTitle h1{
-        font-size: 2rem;
+        font-size: 1.75rem;
         margin: 20px 0px;
     }
     
     .divTitle p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
