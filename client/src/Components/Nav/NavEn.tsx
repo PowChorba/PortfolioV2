@@ -5,7 +5,7 @@ import {FaBars} from 'react-icons/fa'
 import { useLocalStorage } from '../../useLocaleStorage/useLocaleStorage'
 
 export default function NavEn(){
-    const [bars,setBars] = useState(false)
+    const [bars,setBars] = useState(true)
 
     const handleBars = () => {
         setBars(!bars)
