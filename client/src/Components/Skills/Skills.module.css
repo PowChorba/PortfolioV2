@@ -1,0 +1,108 @@
+.container{
+    background: url('../../assets/fondoUno.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.backGround{
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.767);
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.divTitle{
+    text-align: center;
+}
+
+.divTitle h1{
+    font-size: 3rem;
+    margin: 20px 0px;
+}
+
+.divTitle p {
+    font-size: 1.25rem;
+}
+
+.divSkills{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.divSkills div {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.068);
+    transition: all 0.2s ease-in-out 0s;
+    box-shadow: 9px 10px 11px -7px rgba(0,0,0);
+}
+
+.divSkills div:hover{
+    transform: translateY(-5px);
+}
+
+@media only screen and (max-width: 1024px){
+    .divSkills div {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.068);
+        transition: all 0.2s ease-in-out 0s;
+        box-shadow: 9px 10px 11px -7px rgba(0,0,0);
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .divSkills div {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.068);
+        transition: all 0.2s ease-in-out 0s;
+        box-shadow: 9px 10px 11px -7px rgba(0,0,0);
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .divSkills{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 25px;
+        margin-top: 10px;
+    }
+
+    .divTitle h1{
+        font-size: 2rem;
+        margin: 20px 0px;
+    }
+    
+    .divTitle p {
+        font-size: 0.8rem;
+    }
+}

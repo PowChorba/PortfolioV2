@@ -1,0 +1,134 @@
+.container{
+    background: url('../../assets/fondoUno.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.backGround{
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.767);
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 20px;
+    text-align: center;
+}
+
+.divTitle h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.divTitle h3 {
+    font-size: 1.5rem;
+}
+
+.btnCV{
+    margin-top: 10px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.363);
+    cursor: pointer;
+}
+
+.btnCV:hover{
+    background-color: rgba(255, 255, 255, 0.212);
+}
+
+.btnCV a {
+    text-decoration: none;
+}
+
+.image {
+    width: 45em;
+    height: 50%;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+.divIcons {
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    gap: 40px;
+}
+
+.divIcons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.363);
+}
+
+.divIcons a:hover {
+    /* background-color: rgba(7, 7, 32, 0.623); */
+    background-color: rgba(255, 255, 255, 0.212);
+}
+
+@media only screen and (max-width: 1024px){
+    .divTitle h1 {
+        font-size: 2.5rem;
+    }
+    
+    .divTitle h3 {
+        font-size: 1.25rem;
+    }
+
+    .image {
+        width: 30em;
+    }
+}
+
+@media only screen and (max-width: 912px){
+    .divTitle h1 {
+        font-size: 2rem;
+    }
+    
+    .divTitle h3 {
+        font-size: 1rem;
+    }
+
+    .image {
+        width: 25em;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .main {
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .image {
+        width: 25em;
+        height: 100%;
+    }
+
+    .divIcons {
+        display: flex;
+        position: absolute;
+        bottom: 15px;
+        right: 75px;
+        gap: 40px;
+    }
+}

@@ -1,0 +1,92 @@
+.container{
+    background: url('../../assets/fondoUno.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.backGround{
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.767);
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 20px;
+    text-align: center;
+}
+
+.title{
+    font-size: 2.5rem;
+}
+
+.divTexto{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    place-items: center;
+}
+
+.img{
+    width: 75%;
+    height: 75%;
+}
+
+.divTexto div {
+    width: 75%;
+    margin: 0px auto;
+}
+
+.divTexto div h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.divTexto div p {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1024px){
+    .title{
+        font-size: 2rem;
+    }
+
+    .divTexto div h3 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    
+    .divTexto div p {
+        font-size: 0.8rem;
+    }
+
+    .img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .divTexto{
+        grid-template-columns: 1fr;
+    }
+
+    .main {
+        height: 100vh;
+    }
+
+    .divTexto div {
+        width: 90%;
+    }
+    .img{
+        margin-top: 25px;
+        width: 100%;
+        height: 100%;
+    }
+}

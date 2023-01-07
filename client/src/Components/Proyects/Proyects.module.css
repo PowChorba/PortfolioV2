@@ -1,0 +1,232 @@
+.container{
+    background: url('../../assets/fondoUno.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.backGround{
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.767);
+    height: 100vh;
+}
+
+.main{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1.5fr;
+    width: 90%;
+    height: 70vh;
+    margin: 0px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.divBtns{
+    width: 75%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.divBtns h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.divNoActive {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    background-color: rgba(255, 255, 255, 0.212);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 9px 10px 11px -7px rgba(0,0,0);
+}
+
+.divActive{
+    margin-left: 20px;
+    transition: ease-in-out 0.5s;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 9px 10px 11px -7px rgba(0,0,0);
+}
+
+.video{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #fff;
+    box-shadow: 9px 10px 11px -7px rgba(0,0,0);
+}
+
+.divButtons {
+    width: 50%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.divButtons button{
+    padding: 15px 40px;
+    border: none;
+    background-color: rgba(180, 173, 173, 0.712);
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.divButtons button a {
+    text-decoration: none;
+}
+
+.description span {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #fff;
+}
+
+.main p {
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+
+.displayNone {
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 1024px){
+    .divButtons button{
+        padding: 10px 20px;
+    }
+
+    .divActive{
+        padding: 10px;
+        height: 48px;
+    }
+
+    .divNoActive{
+        padding: 10px;
+        height: 48px;
+    }
+
+    .description{
+        display: none;
+    }
+
+    .main{
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width: 912px){
+    .divButtons button{
+        padding: 10px;
+    }
+
+    .divBtns h3 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .main{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        width: 90%;
+        height: 60vh;
+        margin: 0px auto;
+    }
+
+    .description{
+        position: absolute;
+        bottom: 5px;
+    }
+
+    .svg{
+        display: none;
+    }
+
+    .divBtns{
+        width: 75%;
+        height: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+
+    .divBtns h3 {
+        grid-column: 1/3;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .divNoActive {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        height: 60px;
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+    
+    .divActive{
+        margin-left: 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        height: 60px;
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+    
+    .main p {
+        margin-top: 5px;
+        font-size: 0.8rem;
+    }
+
+    .divButtons {
+        width: 75%;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .divButtons button{
+        padding: 10px;
+    }
+
+}

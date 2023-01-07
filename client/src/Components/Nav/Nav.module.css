@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.divLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+.divLinks a {
+    font-size: 1rem;
+    color: rgba(158, 155, 155, 0.425);
+    text-decoration: none;
+}
+
+.divLinks a:hover{
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bars{
+    display: none;
+}
+
+.tags{
+    font-size: 1.75rem;
+}
+
+.divSelect {
+    padding: 10px;
+}
+
+.divSelect select{
+    padding: 5px 10px;
+    border: none;
+    background-color: rgba(7, 7, 32, 0.144);
+}
+
+@media only screen and (max-width: 414px){
+    .bars{
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: 2rem;
+    }
+
+    .displayNoneR{
+        display: none;
+    }
+
+    .divLinks{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        position: absolute;
+        top: 25px;
+        left: 0px;
+    }
+
+    .divLinks a {
+        color: #fff;
+    }
+
+    .divSelect{
+        position: absolute;
+        top: 0px;
+        right: 5px;
+    }
+
+    .tags{
+        display: none;
+    }
+}
