@@ -1,6 +1,6 @@
 import s from './Home.module.css'
 import Nav from '../Nav/Nav'
-import Perfil from '../../assets/developer.jpg'
+import Perfil from '../../assets/perfil.svg'
 import {BsLinkedin,BsGithub} from 'react-icons/bs'
 import {SiGmail} from 'react-icons/si'
 
