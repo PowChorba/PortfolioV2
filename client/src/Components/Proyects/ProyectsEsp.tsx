@@ -6,28 +6,40 @@ import {FiExternalLink} from 'react-icons/fi'
 import ChangApp from '../../assets/Capture.PNG'
 import FastChat from '../../assets/FastChatImg.PNG'
 import PokeDex from '../../assets/pokedex.PNG'
+import Spicy from '../../assets/spicy.PNG'
 
 export default function ProyectsEsp(){
     const [fast, setFast] = useState<boolean>(true)
     const [chang, setChang] = useState<boolean>(false)
     const [poke, setPoke] = useState<boolean>(false)
+    const [spicy, setSpicy] = useState<boolean>(false)
     
     const handleFast = () =>{
         setFast(true)
         setChang(false)
+        setSpicy(false)
         setPoke(false)
     }
 
     const handleChang = () =>{
         setFast(false)
         setChang(true)
+        setSpicy(false)
         setPoke(false)
     }
 
     const handlePoke = () => {
         setFast(false)
         setChang(false)
+        setSpicy(false)
         setPoke(true)
+    }
+
+    const handleSpicy = () => {
+        setFast(false)
+        setChang(false)
+        setPoke(false)
+        setSpicy(true)
     }
 
     return(
@@ -55,6 +67,12 @@ export default function ProyectsEsp(){
                             height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" className={s.svg}>
                             <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
                         </div>
+                        <div onClick={handleSpicy} className={spicy ? s.divActive : s.divNoActive}>
+                            <p>SpicyX</p>
+                            <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 320 512" 
+                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" className={s.svg}>
+                            <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                        </div>
                         <div className={s.description}>
                             <span>Description</span>
                                 {/* CHANG APP */}
@@ -70,6 +88,8 @@ export default function ProyectsEsp(){
                                 {/* POKEDEX */}
                                 <p className={poke ? s.asd : s.displayNone}>La funcionalidad de esta pagina es un SPA(Single Page Application), basada en la tematica Pokemon y obteniendo la informacion de una REST API.
                                 Dentro de la aplicacion podes filtrar, ordenar o buscar los Pokemons con toda su informacion. Ademas, podes crear un Pokemon propio!</p>
+                                {/* SPICY X */}
+                                <p className={spicy ? s.asd : s.displayNone}>Esta es una pagina para adultos. Contiene videos de las mejores paginas, que fueron obtenidas a traves de web scrapping (todo legal) y cuenta con un sistema de publicidad. Esta desarrollada con NextJS, NestJS y MongoDB </p>
                         </div>
                         
 
@@ -79,6 +99,7 @@ export default function ProyectsEsp(){
                         {/* <iframe src="https://www.youtube.com/embed/pTkY79n_7-U" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className={fast ? s.img : s.displayNone}></iframe> */}
                         <img src={FastChat} alt='fastChat' className={fast ? s.img : s.displayNone}/>
                         <img src={PokeDex} alt='PokeDex' className={poke ? s.img : s.displayNone}/>
+                        <img src={Spicy} alt='SpicyX' className={spicy ? s.img : s.displayNone}/>
                         <div className={fast ? s.divButtons : s.displayNone}>
                             <button><a href="https://github.com/PowChorba/FastChat/tree/Pow" rel="noreferrer" target='_blank'><BsGithub/>{' '}Codigo Fuente</a></button>
                             <button><a href="https://fast-chat-chi.vercel.app/" rel="noreferrer" target='_blank'><FiExternalLink/>{' '}Deploy</a></button>
