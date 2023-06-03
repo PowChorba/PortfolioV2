@@ -12,7 +12,7 @@ export default function HomeEsp(){
             <main className={s.main}>
                 <div className={s.divTitle}>
                     <h1>Hola! Mi nombre es <br /> Agop Chorbadjian</h1>
-                    <h3>{'<'}Desarrollador Web Fullstack{'/>'}</h3>
+                    <h3>{'<'}Desarrollador Web Front-End{'/>'}</h3>
                     {/* <button className={s.btnCV}><a href="./AgopChorbadjianCV.pdf" download>Descargar CV</a></button> */}
                 </div>
                 <div>
