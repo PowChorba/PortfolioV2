@@ -112,6 +112,10 @@ export default function ProyectsEsp(){
                             <button><a href="https://github.com/PowChorba/PI-POKEMONS" rel="noreferrer" target='_blank'><BsGithub/>{' '}Codigo Fuente</a></button>
                             <button><a href="https://pi-pokemons-chi.vercel.app/home" rel="noreferrer" target='_blank'><FiExternalLink/>{' '}Deploy</a></button>
                         </div>
+                        <div className={spicy ? s.divButtons : s.displayNone}>
+                            <button><a href="https://github.com/PowChorba/Spicy" rel="noreferrer" target='_blank'><BsGithub/>{' '}Codigo Fuente</a></button>
+                            <button><a href="https://pornspicyx.com" rel="noreferrer" target='_blank'><FiExternalLink/>{' '}Deploy</a></button>
+                        </div>
                     </div>
                 </main>
             </div>
