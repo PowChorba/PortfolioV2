@@ -114,7 +114,7 @@ export default function ProyectsEn(){
                         </div>
                         <div className={spicy ? s.divButtons : s.displayNone}>
                             <button><a href="https://github.com/PowChorba/Spicy" rel="noreferrer" target='_blank'><BsGithub/>{' '}Source Code</a></button>
-                            <button><a href="https://videospicy.online/" rel="noreferrer" target='_blank'><FiExternalLink/>{' '}Deploy</a></button>
+                            <button><a href="https://pornspicyx.com/" rel="noreferrer" target='_blank'><FiExternalLink/>{' '}Deploy</a></button>
                         </div>
                     </div>
                 </main>
