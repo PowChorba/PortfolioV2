@@ -18,8 +18,7 @@ export default function AboutEs(){
                             <p>Soy Agop Chorbadjian, Fullstack Web Developer graduado de Henry. Realize un bootcamp intensivo durante cuatro meses, con mas de 600hs de estudio.</p>
                             <br />
                             <h3>Que hago?</h3>
-                            <p>Estoy en constante evolucion, tratando de mejorar dia a dia. Adquiriendo nuevos conocimientos y implementandolos en pequenos proyectos, para asi,
-                            poder crecer dentro del mundo IT.
+                            <p>Ahora estoy buscando oportunidades para aplicar y ampliar aún más mi conjunto de habilidades, así como contribuir al éxito de empresas innovadoras de TI. Confío en mi capacidad para impulsar iniciativas de desarrollo web impactantes, aportando una combinación de destreza técnica y pasión por la excelencia a cada proyecto que emprendo.
                             </p>
                         </div>
                         <img src={Henry} alt="Certificado" className={s.img}/>

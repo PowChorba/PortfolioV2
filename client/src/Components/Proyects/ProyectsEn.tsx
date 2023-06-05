@@ -91,9 +91,9 @@ export default function ProyectsEn(){
                                 {/* SPICY X */}
                                 <p className={spicy ? s.asd : s.displayNone}>This is an adult page, where you can find videos from the main pages all in one. We used web scrapping to get the videos and put it in the DB (is all legal) and counts with an advertising. The app is developed with NextJS, NestJS and MongoDB. </p>
                         </div>
+                    </div>
                         
 
-                    </div>
                     <div className={s.video}>
                         <img src={ChangApp} alt='ChangApp' className={chang ? s.img : s.displayNone}/>
                         {/* <iframe src="https://www.youtube.com/embed/pTkY79n_7-U" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className={fast ? s.img : s.displayNone}></iframe> */}

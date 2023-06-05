@@ -17,7 +17,7 @@
     place-items: center;
     grid-template-columns: 1fr 1.5fr;
     width: 90%;
-    height: 70vh;
+    height: 90vh;
     margin: 0px auto;
     position: absolute;
     top: 50%;
@@ -42,7 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 15px;
     height: 60px;
     margin-bottom: 20px;
     font-size: 1.25rem;
@@ -59,7 +59,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 15px;
     height: 60px;
     margin-bottom: 20px;
     font-size: 1.25rem;

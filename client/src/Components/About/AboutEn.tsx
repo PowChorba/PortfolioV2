@@ -18,8 +18,7 @@ export default function AboutEn(){
                             <p>I'm Agop Chorbadjian, Fullstack Web Developer graduated from Henry. I did an intensive bootcamp for four months, with more than 600 hours of study.</p>
                             <br />
                             <h3>What I do?</h3>
-                            <p>I am constantly evolving, trying to improve day by day. Acquiring new knowledge and implementing it in small projects,
-                            to grow within the IT world.
+                            <p>I am now seeking opportunities to further apply and expand my skill set, as well as contribute to the success of innovative IT ventures. I am confident in my ability to drive impactful web development initiatives, bringing a blend of technical prowess and a passion for excellence to every project I undertake.
                             </p>
                         </div>
                         <img src={Henry} alt="Certificado" className={s.img}/>
