@@ -7,6 +7,7 @@ import ChangApp from '../../assets/Capture.PNG'
 import FastChat from '../../assets/FastChatImg.PNG'
 import PokeDex from '../../assets/pokedex.PNG'
 import Spicy from '../../assets/spicy.PNG'
+import emailjs from 'emailjs-com';
 
 export default function ProyectsEsp(){
     const [fast, setFast] = useState<boolean>(true)
@@ -41,6 +42,24 @@ export default function ProyectsEsp(){
         setPoke(false)
         setSpicy(true)
     }
+
+    const handleEmailSend = () => {
+        const templateParams = {
+          // Define the parameters for the email template
+          // You can retrieve these values from user inputs or define them in your component
+          to_email: 'pow.chorba@hotmail.com',
+          from_name: 'Profile Web',
+          message: 'Entraron a la pagina!',
+        };
+    
+        emailjs.send('service_03v5rjv', 'template_2mgcpvv', templateParams, 'gQK16Eo-eguluAAfh')
+          .then((response) => {
+            console.log('Email sent successfully!', response.status, response.text);
+          })
+          .catch((error) => {
+            console.log('Email sending failed...', error);
+          });
+    }      
 
     return(
         <div className={s.container}>
@@ -114,7 +133,7 @@ export default function ProyectsEsp(){
                         </div>
                         <div className={spicy ? s.divButtons : s.displayNone}>
                             <button><a href="https://github.com/PowChorba/Spicy" rel="noreferrer" target='_blank'><BsGithub/>{' '}Codigo Fuente</a></button>
-                            <button><a href="https://pornspicyx.com" rel="noreferrer" target='_blank'><FiExternalLink/>{' '}Deploy</a></button>
+                            <button onClick={() => handleEmailSend()}><a href="https://pornspicyx.com" rel="noreferrer" target='_blank'><FiExternalLink/>{' '}Deploy</a></button>
                         </div>
                     </div>
                 </main>
