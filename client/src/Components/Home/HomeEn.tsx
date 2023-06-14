@@ -12,7 +12,7 @@ export default function HomeEn(){
             <main className={s.main}>
                 <div className={s.divTitle}>
                     <h1>H1! My name is <br /> Agop Chorbadjian</h1>
-                    <h3>{'<'}Front-End Web Developer{'/>'}</h3>
+                    <h3>{'<'}Front-End Developer{'/>'}</h3>
                     {/* <button className={s.btnCV}><a href="./AgopChorbadjianCV(ingles).pdf" download>Download CV</a></button> */}
                 </div>
                 <div>
