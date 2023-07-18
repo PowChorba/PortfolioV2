@@ -108,7 +108,7 @@ export default function ProyectsEsp(){
                                 <p className={poke ? s.asd : s.displayNone}>La funcionalidad de esta pagina es un SPA(Single Page Application), basada en la tematica Pokemon y obteniendo la informacion de una REST API.
                                 Dentro de la aplicacion podes filtrar, ordenar o buscar los Pokemons con toda su informacion. Ademas, podes crear un Pokemon propio!</p>
                                 {/* SPICY X */}
-                                <p className={spicy ? s.asd : s.displayNone}>Esta es una pagina para adultos. Contiene videos de las mejores paginas, que fueron obtenidas a traves de web scrapping (todo legal) y cuenta con un sistema de publicidad. Esta desarrollada con NextJS, NestJS y MongoDB </p>
+                                <p className={spicy ? s.asd : s.displayNone}>Esta es una pagina para adultos. Contiene videos de las mejores paginas, que fueron obtenidas a traves de web scrapping y cuenta con un sistema de publicidad. Esta desarrollada con NextJS, NestJS y MongoDB </p>
                         </div>
                         
 
