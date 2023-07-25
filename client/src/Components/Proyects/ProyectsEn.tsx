@@ -130,7 +130,7 @@ export default function ProyectsEn(){
                                 <p className={poke ? s.asd : s.displayNone}>The functionality of this page is a Single Page Application (SPA) based on the Pokemon theme with information pulled from a REST API.
                                 In this app you can filter, sort and search for Pokemons with all their information. In turn, a new Pokemon can be created.</p>
                                 {/* SPICY X */}
-                                <p className={spicy ? s.asd : s.displayNone}>This is an adult page, where you can find videos from the main pages all in one. We used web scrapping to get the videos and put it in the DB (is all legal) and counts with an advertising. The app is developed with NextJS, NestJS and MongoDB. </p>
+                                <p className={spicy ? s.asd : s.displayNone}>This is an adult page, where you can find videos from the main pages all in one. We used web scrapping to get the videos and put it in the DB and counts with an advertising. The app is developed with NextJS, NestJS and MongoDB. </p>
                                 {/* SPICYBETS */}
                                 <p className={casino ? s.asd : s.displayNone}>SpicyBets is an online betting website. It features a slot machine system where you can play with fake money to pass the time. Additionally, it has a login and authentication system. It's developed using NextJS for the front-end, NestJS for the back-end, and MongoDB for the database.</p>
                         </div>
