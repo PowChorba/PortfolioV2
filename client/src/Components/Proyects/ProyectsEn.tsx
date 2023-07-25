@@ -7,6 +7,7 @@ import ChangApp from '../../assets/Capture.PNG'
 import FastChat from '../../assets/FastChatImg.PNG'
 import PokeDex from '../../assets/pokedex.PNG'
 import Spicy from '../../assets/spicy.PNG'
+import Casino from '../../assets/spicybets.PNG'
 import emailjs from 'emailjs-com';
 
 
@@ -15,12 +16,15 @@ export default function ProyectsEn(){
     const [chang, setChang] = useState<boolean>(false)
     const [poke, setPoke] = useState<boolean>(false)
     const [spicy, setSpicy] = useState<boolean>(false)
+    const [casino, setCasino] = useState<boolean>(false)
     
+
     const handleFast = () =>{
         setFast(true)
         setChang(false)
         setSpicy(false)
         setPoke(false)
+        setCasino(false)
     }
 
     const handleChang = () =>{
@@ -28,6 +32,7 @@ export default function ProyectsEn(){
         setChang(true)
         setSpicy(false)
         setPoke(false)
+        setCasino(false)
     }
 
     const handlePoke = () => {
@@ -35,6 +40,7 @@ export default function ProyectsEn(){
         setChang(false)
         setSpicy(false)
         setPoke(true)
+        setCasino(false)
     }
 
     const handleSpicy = () => {
@@ -42,6 +48,15 @@ export default function ProyectsEn(){
         setChang(false)
         setPoke(false)
         setSpicy(true)
+        setCasino(false)
+    }
+
+    const handleCasino = () => {
+        setFast(false)
+        setChang(false)
+        setPoke(false)
+        setSpicy(false)
+        setCasino(true)
     }
 
     const handleEmailSend = () => {
@@ -93,6 +108,12 @@ export default function ProyectsEn(){
                             height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" className={s.svg}>
                             <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
                         </div>
+                        <div onClick={handleCasino} className={casino ? s.divActive : s.divNoActive}>
+                            <p>SpicyBets</p>
+                            <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 320 512" 
+                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" className={s.svg}>
+                            <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                        </div>
                         <div className={s.description}>
                             <span>Description</span>
                                 {/* CHANG APP */}
@@ -110,6 +131,8 @@ export default function ProyectsEn(){
                                 In this app you can filter, sort and search for Pokemons with all their information. In turn, a new Pokemon can be created.</p>
                                 {/* SPICY X */}
                                 <p className={spicy ? s.asd : s.displayNone}>This is an adult page, where you can find videos from the main pages all in one. We used web scrapping to get the videos and put it in the DB (is all legal) and counts with an advertising. The app is developed with NextJS, NestJS and MongoDB. </p>
+                                {/* SPICYBETS */}
+                                <p className={casino ? s.asd : s.displayNone}>SpicyBets is an online betting website. It features a slot machine system where you can play with fake money to pass the time. Additionally, it has a login and authentication system. It's developed using NextJS for the front-end, NestJS for the back-end, and MongoDB for the database.</p>
                         </div>
                     </div>
                         
@@ -120,6 +143,7 @@ export default function ProyectsEn(){
                         <img src={FastChat} alt='fastChat' className={fast ? s.img : s.displayNone}/>
                         <img src={PokeDex} alt='PokeDex' className={poke ? s.img : s.displayNone}/>
                         <img src={Spicy} alt='SpicyX' className={spicy ? s.img : s.displayNone}/>
+                        <img src={Casino} alt='SpicyBets' className={casino ? s.img : s.displayNone}/>
                         <div className={fast ? s.divButtons : s.displayNone}>
                             <button><a href="https://github.com/PowChorba/FastChat/tree/Pow" rel="noreferrer" target='_blank'><BsGithub/>{' '}Source Code</a></button>
                             <button><a href="https://fast-chat-chi.vercel.app/" rel="noreferrer" target='_blank'><FiExternalLink/>{' '}Deploy</a></button>
@@ -135,6 +159,10 @@ export default function ProyectsEn(){
                         <div className={spicy ? s.divButtons : s.displayNone}>
                             <button><a href="https://github.com/PowChorba/Spicy" rel="noreferrer" target='_blank'><BsGithub/>{' '}Source Code</a></button>
                             <button onClick={handleEmailSend}><a href="https://pornspicyx.com/" rel="noreferrer" target='_blank'><FiExternalLink/>{' '}Deploy</a></button>
+                        </div>
+                        <div className={casino ? s.divButtons : s.displayNone}>
+                            <button><a href="https://github.com/PowChorba/Casino" rel="noreferrer" target='_blank'><BsGithub/>{' '}Codigo Fuente</a></button>
+                            <button onClick={() => handleEmailSend()}><a href="https://casino-powchorba.vercel.app/" rel="noreferrer" target='_blank'><FiExternalLink/>{' '}Deploy</a></button>
                         </div>
                     </div>
                 </main>
