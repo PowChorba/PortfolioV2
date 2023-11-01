@@ -47,7 +47,7 @@ export default function NavEn(){
                 <div className={s.divLinks}>
                     <span className={s.tags}>{'</>'}</span>
                     <Link to='/'>Home</Link>
-                    <Link onClick={handleEmailSend} to='/proyects'>Proyects</Link>
+                    <Link onClick={handleEmailSend} to='/proyects'>Projects</Link>
                     <Link to='/techs'>Techs</Link>
                     <Link to='/about'>About Me</Link>
                 </div>
