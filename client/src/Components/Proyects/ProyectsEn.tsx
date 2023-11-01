@@ -83,7 +83,7 @@ export default function ProyectsEn(){
                 <Nav/>
                 <main className={s.main}>
                     <div className={s.divBtns}>
-                        <h3>My Proyects</h3>
+                        <h3>My Projects</h3>
                         <div onClick={handleFast} className={fast ? s.divActive : s.divNoActive}>
                             <p>FastChat</p>
                             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 320 512" 
